@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamidu Pethum - Software Engineering Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>CHAMIDU</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <img src="Profile.jpg" alt="Profile Photo" class="profile-photo">
+                        
+                    </div>
+                </div>
+                <h1 class="hero-name">CHAMIDU PETHUM</h1>
+                <p class="hero-title">Software Engineering Student</p>
+                <p class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Ambalantota, Sri Lanka
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
+                    <a href="Chamidu_Pethum_CV.pdf" class="btn btn-secondary" download onclick="downloadCV()">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:bcpethum@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bcpethum" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="tel:+94718464482" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate and detail-oriented Software Engineering student with a strong foundation in programming, web development, and problem-solving. I enjoy working on innovative projects, learning new technologies, and contributing to team success. My goal is to become a skilled full-stack developer and build impactful software solutions that improve user experiences.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h4>Languages</h4>
+                            <p>Sinhala (Native), English (Fluent)</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Contact</h4>
+                            <p>bcpethum@gmail.com</p>
+                            <p>+94 71 8464482</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">JavaScript (ES6+)</span>
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Cloud</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">ConvexDB</span>
+                        <span class="skill-badge">Basic AWS/Azure</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Problem-Solving & Debugging</span>
+                        <span class="skill-badge">Object-Oriented Programming</span>
+                        <span class="skill-badge">Team Collaboration</span>
+                        <span class="skill-badge">Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Intern Software Engineer</h3>
+                        <h4>Tech Solutions</h4>
+                        <ul>
+                            <li>Assisted in developing a web-based e-commerce platform using React.js, Node.js, and MongoDB</li>
+                            <li>Collaborated with senior engineers to fix bugs and improve UI performance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Web Developer (Part-Time)</h3>
+                        <h4>Freelance Projects</h4>
+                        <ul>
+                            <li>Designed and developed portfolio websites for students and small businesses</li>
+                            <li>Built a restaurant management system using PHP, MySQL, and Bootstrap</li>
+                            <li>Learned how to work with clients, gather requirements, and deliver projects on time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>B.Sc. (Hons) in Software Engineering</h3>
+                        <h4>Sabaragamuwa University of Sri Lanka</h4>
+                        <span class="education-date">2023 – 2027</span>
+                        <ul>
+                            <li>Focused on software development, databases, computer security and cloud computing</li>
+                            <li>Completed projects in web application development and mobile app design</li>
+                            <li>Member of the Computer Science Society</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Advanced Level Examination – Physical Science Stream</h3>
+                        <h4>Therapuththa National College</h4>
+                        <span class="education-date">2012 – 2020</span>
+                        <ul>
+                            <li>Subjects: Combined Mathematics, Physics, Chemistry</li>
+                            <li>Achieved strong academic performance with distinction in Maths</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="references section">
+        <div class="container">
+            <h2 class="section-title">References</h2>
+            <div class="references-grid">
+                <div class="reference-item">
+                    <div class="reference-info">
+                        <h3>Mr. Malith Jayasooriya</h3>
+                        <p class="reference-title">Senior Software Engineer</p>
+                        <div class="reference-contact">
+                            <p><i class="fas fa-phone"></i> +94-77-123-1234</p>
+                            <p><i class="fas fa-envelope"></i> malith.jayasooriya@tech.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <div class="reference-info">
+                        <h3>Ms. Ruwani Chandima</h3>
+                        <p class="reference-title">Project Manager</p>
+                        <div class="reference-contact">
+                            <p><i class="fas fa-phone"></i> +94-71-987-6543</p>
+                            <p><i class="fas fa-envelope"></i> ruwanichandima@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>bcpethum@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+94 71 8464482</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Ambalantota, Sri Lanka</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>www.linkedin.com/in/bcpethum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <!-- Hidden recipient fields for EmailJS template -->
+                        <input type="hidden" name="to_name" value="Chamidu Pethum">
+                        <input type="hidden" name="to_email" value="chamidupethum@gmail.com">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Chamidu Pethum. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="mailto:chamidupethum@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chamidupethum" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="tel:+94711234567" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
